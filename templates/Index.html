@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Alfex Textil</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Alfex Textil" class="logo-img">
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero">
+        <img src="{{ url_for('static', filename='images/hero.png') }}" alt="Alfex Textil" class="hero-img">
+        <br>    
+        <a href="#contacto">Contáctanos</a>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+        
+        <h2>Nuestros Servicios</h2>
+
+        <div class="servicios-grid">
+            <div class="servicio">
+                <img src="{{ url_for('static', filename='images/corte.png') }}" alt="Corte">
+                <h3>Corte</h3>
+                <p>Precisión en cada corte.</p>
+            </div>
+
+            <div class="servicio">
+                <img src="{{ url_for('static', filename='images/fusionado.png') }}" alt="Fusionado">
+                <h3>Fusionado</h3>
+                <p>Tecnología y calidad en fusionado textil.</p>
+            </div>
+
+            <div class="servicio">
+                <img src="{{ url_for('static', filename='images/confeccion.png') }}" alt="Confección">
+                <h3>Confección</h3>
+                <p>Confección que da forma a tus ideas.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Teléfono: <a href="tel:+57XXXXXXXXXX">+57 318 588 5885</a></p>
+        <p>Email: <a href="mailto:correo@alfextextil.com">correo@alfextextil.com</a></p>
+        <p>Ciudad: Medellín, Colombia</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Alfex Textil. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
