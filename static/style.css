@@ -153,3 +153,30 @@ footer {
     font-size: 13px;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .servicios-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .servicio {
+        width: 90%;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-img {
+        max-width: 90%;
+    }
+
+    nav ul {
+        gap: 16px;
+    }
+
+    .logo-img {
+        height: 36px;
+    }
+}
